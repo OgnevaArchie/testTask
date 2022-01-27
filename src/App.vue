@@ -1,33 +1,31 @@
 <template>
-  <div class="content"> 
+  <div class="content">
     <UserProfile />
     <BeerProfile />
   </div>
 </template>
 
 <script>
-import UserProfile from './components/UserProfile.vue'
-import BeerProfile from './components/BeerProfile.vue'
-
+import UserProfile from "./components/UserProfile.vue";
+import BeerProfile from "./components/BeerProfile.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     UserProfile,
-    BeerProfile
-  }
-}
+    BeerProfile,
+  },
+};
 </script>
 
 <style>
-  .content {
-display:flex;
-  }
-
-@media  screen and (max-width: 768px) {
-
 .content {
-flex-direction: column; 
- }
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
 }
 </style>
